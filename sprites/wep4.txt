@@ -1,0 +1,5 @@
+SPRITE
+wep4
+
+i images\wep4.png
+w 0

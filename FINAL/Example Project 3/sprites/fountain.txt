@@ -1,0 +1,14 @@
+SPRITE
+fountain
+
+i images\heal1.png
+w 1
+
+oa
+ggv maxhealth
+ssgv health
+print  
+print  
+print The gods bless you.
+
+#

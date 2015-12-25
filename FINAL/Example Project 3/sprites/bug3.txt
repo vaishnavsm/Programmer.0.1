@@ -1,0 +1,89 @@
+SPRITE
+bug3
+
+i images\bug3.png
+w 1
+
+ro
+sgv bg3 4
+sv 0 0 hp 2500
+
+oa
+ggv dam
+gv 0 0 hp
+sub
+ssv 0 0 hp
+
+gv 0 0 msg
+ln
+isp 2200
+gv 0 0 hp
+lt
+la
+isp 2000
+gv 0 0 hp
+gt
+la
+if
+print This will take time.
+print This beast still has 2200 health.
+sv 0 0 msg 1
+;
+
+gv 0 0 msg
+ln
+isp 1500
+gv 0 0 hp
+lt
+la
+isp 1200
+gv 0 0 hp
+gt
+la
+if
+print This beast still has around 1200 health.
+sv 0 0 msg 1
+;
+
+gv 0 0 msg
+ln
+isp 500
+gv 0 0 hp
+lt
+la
+isp 300
+gv 0 0 hp
+gt
+la
+if
+print The shells crack! It has
+print only 500 health left!
+sv 0 0 msg 1
+;
+
+gv 0 0 msg
+ln
+isp 1
+gv 0 0 hp
+lt
+la
+if
+print You've done it!
+sv 0 0 msg 1
+isp 1
+ggv bg3
+sub
+ssgv bg3
+ss 0 0 grass
+;
+
+ggv bg3
+isp 0
+eq
+if
+ss 0 0 arm2
+;
+
+sv 0 0 msg 0
+
+#

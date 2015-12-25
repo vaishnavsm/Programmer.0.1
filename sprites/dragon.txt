@@ -1,0 +1,5 @@
+SPRITE
+dragon
+
+i images\dragon.png
+w 1

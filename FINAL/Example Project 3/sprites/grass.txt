@@ -1,0 +1,6 @@
+SPRITE
+grass
+
+i images\grass.png
+
+w 0

@@ -1,0 +1,5 @@
+SPRITE
+tree
+
+i images\tree1.png
+w 1

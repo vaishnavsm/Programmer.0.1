@@ -1,0 +1,24 @@
+SPRITE
+blood
+i dat\b2.png
+w 0
+
+ro
+sv 0 0 tim 5
+
+oh
+print You see blood, and...
+print some mushy stuff.
+
+t1
+isp 1
+gv 0 0 tim
+sub
+ssv 0 0 tim
+gv 0 0 tim
+if
+else
+ss 0 0 grass
+;
+
+#

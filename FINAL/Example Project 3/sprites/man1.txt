@@ -1,0 +1,38 @@
+SPRITE
+man1
+
+i images\man1.png
+w 1
+
+ro
+sv 0 0 queststart 0
+
+oa
+gv 0 0 queststart
+isp 0
+eq
+if
+print Hah, you think you can pass?
+print You're FAR too weak. Try this.
+print Kill all the stuff you can.
+print THEN, i'll give you this sword here.
+print QUEST: IMPROVEMENTS
+sv 0 0 queststart 1
+else
+ggv bug2kills
+isp 5
+eq
+ggv blobkills
+isp 5
+eq
+la
+if
+print Impressive. You've earned this.
+print May the world favour you, traveller.
+ss 0 0 wep2
+else
+print What are you waiting for?
+print Don't you want to pass?
+;
+;
+#

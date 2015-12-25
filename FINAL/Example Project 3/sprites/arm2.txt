@@ -1,0 +1,16 @@
+SPRITE
+arm2
+
+i images\armor2.png
+w 0
+
+
+oh
+sgv health 1000
+sgv maxhealth 1000
+print GET: CHAINMAIL ARMOUR
+print You now have 1000 health.
+ss 0 0 grass
+
+#
+

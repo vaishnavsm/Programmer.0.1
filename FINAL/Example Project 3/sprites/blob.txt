@@ -1,0 +1,100 @@
+SPRITE
+blob
+
+i images\blob.png
+w 0
+
+oa
+isp 4
+rand
+mod
+isp 0
+eq
+if
+ss 0 0 grass
+ggv blobkills
+isp 1
+add
+ssgv blobkills
+;
+
+t1
+gv 0 0 tim
+isp 1
+add
+ssv 0 0 tim
+gv 0 0 tim
+isp 3
+lt
+ssv 0 0 op
+gv 0 0 op
+gv 0 0 or
+isp 0
+eq
+la
+ssp grass
+gs 1 0
+seq
+la
+if
+ss 1 0 blob
+sv 1 0 tim 0
+sv 1 0 or 1
+ss 0 0 grass
+;
+gv 0 0 or
+isp 1
+eq
+gv 0 0 op
+la
+ssp grass
+gs 0 1
+seq
+la
+if
+ss 0 1 blob
+sv 0 1 tim 0
+sv 0 1 or 2
+ss 0 0 grass
+;
+
+gv 0 0 or
+isp 2
+eq
+gv 0 0 op
+la
+ssp grass
+gs -1 0
+seq
+la
+if
+ss -1 0 blob
+sv -1 0 tim 0
+sv -1 0 or 3
+ss 0 0 grass
+;
+
+gv 0 0 or
+isp 3
+eq
+gv 0 0 op
+la
+ssp grass
+gs 0 -1
+seq
+la
+if
+ss 0 -1 blob
+sv 0 -1 tim 0
+sv 0 -1 or 0
+ss 0 0 grass
+;
+
+oh
+isp 5
+ggv health
+sub
+print {5} DAMAGE
+ssgv health
+
+#

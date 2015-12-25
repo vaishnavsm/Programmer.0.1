@@ -1,0 +1,5 @@
+SPRITE
+grass
+i dat\g1.png
+w 0
+#

@@ -1,0 +1,5 @@
+SPRITE
+man3
+
+i images\man3.png
+w 1

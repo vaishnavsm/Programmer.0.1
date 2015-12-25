@@ -1,0 +1,142 @@
+SPRITE
+bug1
+
+i images\bug1.png
+w 1
+
+
+ro
+sv 0 0 myh 200
+sgv bg1 7
+
+oa
+ggv dam
+gv 0 0 myh
+sub
+ssv 0 0 myh
+
+isp 0
+gv 0 0 myh
+lt
+if
+ss 0 0 grass
+else
+isp 100
+gv 0 0 myh
+lt
+if
+print It's critically weak
+else
+isp 200
+gv 0 0 myh
+lt
+if
+print It's getting weaker...
+;
+
+
+t2
+pgx
+isp 0
+gt
+if
+pgx
+isp -1
+mul
+else
+pgx
+;
+pgy
+isp 0
+gt
+if
+pgy
+isp -1
+mul
+else
+pgy
+;
+add
+isp 3
+gt
+if
+print {9} DAMAGE
+isp 9
+ggv health
+sub
+ssgv health
+;
+
+ggv dam
+isp 50
+eq
+isp 17
+ggv bg1
+lt
+la
+gs -1 1
+ssp grass
+seq
+la
+if
+ss -1 1 bug1
+ggv bg1
+isp 1
+add
+ssgv bg1
+;
+
+isp 4
+rand
+mod
+ssv 0 0 dir
+
+gv 0 0 dir
+isp 0
+eq
+gs 0 1
+ssp grass
+seq
+la
+if
+ss 0 1 bug1
+ss 0 0 grass
+
+else
+gv 0 0 dir
+isp 1
+eq
+gs 0 -1
+ssp grass
+seq
+la
+if
+ss 0 -1 bug1
+ss 0 0 grass
+
+else
+gv 0 0 dir
+isp 2
+eq
+gs 1 0
+ssp grass
+seq
+la
+if
+ss 1 0 bug1
+ss 0 0 grass
+
+else
+gv 0 0 dir
+isp 3
+eq
+gs -1 0
+ssp grass
+seq
+la
+if
+ss -1 0 bug1
+ss 0 0 grass
+;
+
+#

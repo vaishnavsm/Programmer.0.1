@@ -1,0 +1,5 @@
+SPRITE
+blob
+
+i images\blob.png
+w 0

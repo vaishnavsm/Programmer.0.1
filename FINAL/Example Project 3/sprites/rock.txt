@@ -1,0 +1,5 @@
+SPRITE
+rock
+
+i images\boulder.png
+w 1

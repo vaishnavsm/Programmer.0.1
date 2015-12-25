@@ -1,0 +1,5 @@
+SPRITE
+cave
+
+i images\rock.png
+w 0

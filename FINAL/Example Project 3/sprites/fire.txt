@@ -1,0 +1,5 @@
+SPRITE
+fire
+
+i images\fire.png
+w 0

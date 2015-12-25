@@ -1,0 +1,37 @@
+SPRITE
+dragon
+
+i images\dragon.png
+w 1
+
+t1
+pgx
+isp 0
+gt
+if
+pgx
+isp -1
+mul
+else
+pgx
+;
+pgy
+isp 0
+gt
+if
+pgy
+isp -1
+mul
+else
+pgy
+;
+add
+isp 6
+gt
+if
+isp 1000
+ggv health
+sub
+ssgv health
+;
+#

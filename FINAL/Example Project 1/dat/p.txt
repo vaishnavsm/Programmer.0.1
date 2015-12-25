@@ -1,0 +1,24 @@
+SPRITE
+monster
+i dat\p1.png
+w 0
+
+oh
+ss -1 -1 brick
+ss -1 0 brick
+ss -1 1 brick
+ss 0 1 brick
+ss 1 1 brick
+ss 1 0 brick
+ss 1 -1 brick
+ss 0 -1 brick
+ss 0 0 brick
+print You're dead.
+end
+;
+
+oa
+ss 0 0 blood
+;
+
+#

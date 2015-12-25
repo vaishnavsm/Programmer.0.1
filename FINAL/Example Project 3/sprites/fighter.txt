@@ -1,0 +1,30 @@
+SPRITE
+fighter
+
+i images\fighter.png
+w 1
+
+oa
+gv 0 0 queston
+isp 0
+eq
+if
+print HAH, You think you can fight in the 
+print caves with that getup?
+print Kid, I won't send you to die. Get some
+print Better armor, then we'll talk.
+print QUEST: BETTER ARMOR
+sv 0 0 queston 1
+else
+ggv maxhealth
+isp 1000
+eq
+if
+print Good, good. That should do well.
+print You may pass.
+ss 0 0 grass
+ss 0 4 dragon
+else
+print You are still lacking.
+;
+#

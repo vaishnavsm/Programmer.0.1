@@ -1,0 +1,127 @@
+SPRITE
+man3
+
+i images\man3.png
+w 1
+
+ro
+sv 0 0 tim 0
+sgv health 100
+sgv maxhealth 100
+
+t4
+ggv health
+isp 1
+gt
+if
+end
+print YOU ARE DEAD
+;
+
+t1
+gv 0 0 tim
+isp 1
+add
+ssv 0 0 tim
+
+gv 0 0 tuto1
+if
+gv 0 0 part
+isp 0
+eq
+if
+print Welcome Traveller.
+print This is the world of Mahstra.
+print A peaceful land, if I may...
+print But it is troubled by a great threat.
+sv 0 0 part 1
+else
+gv 0 0 part
+isp 1
+eq
+gv 0 0 tim
+isp 5
+lt
+la
+if
+sv 0 0 tim 0
+print The dragon ETIGO has found abode in
+print the nearby caves. He is a mystic dragon
+print who can maim though magic. He has brought
+print out unspeakable horrors on to this land.
+sv 0 0 part 2
+else
+gv 0 0 part
+isp 2
+eq
+gv 0 0 tim
+isp 4
+lt
+la
+if
+sv 0 0 tim 0
+print You must be godsent. You CAN stop its terror.
+print But first, you must be sworded. You cannot
+print kill it with usual weapons. It is far
+print too strong. 
+sv 0 0 part 3
+else
+gv 0 0 part
+isp 3
+eq
+gv 0 0 tim
+isp 4
+lt
+la
+if
+sv 0 0 tim 0
+print But for starters, that wooden
+print sword over there would do, right?
+print QUEST: GET THE SWORD
+sgv quest1 1
+sv 0 0 tuto1 0
+sv 0 0 part 4
+sv tim 0
+;
+;
+
+;
+ggv quest1
+isp 3
+eq
+if
+print Well done, player.
+print Take this as a reward.
+print Now, off you go!
+print Take the world on!
+ss 1 0 arm1
+sgv quest1 4
+;
+isp 90
+ggv health
+lt
+isp 15
+gv 0 0 tim
+gt
+la
+if
+print You feel dizzy. You have less than
+print 90 health left. Heal at the fountain.
+sv 0 0 tim 0
+;
+
+oa
+ggv quest1
+isp 0
+eq
+if
+sv 0 0 tuto1 1
+else
+ggv quest1
+isp 2
+eq
+if
+sgv quest1 3
+;
+;
+#

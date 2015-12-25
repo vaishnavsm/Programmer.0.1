@@ -1,0 +1,5 @@
+SPRITE
+ot
+i o.png
+
+#

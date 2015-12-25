@@ -1,0 +1,5 @@
+SPRITE
+fountain
+
+i images\heal1.png
+w 1

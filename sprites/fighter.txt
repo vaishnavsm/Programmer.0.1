@@ -1,0 +1,5 @@
+SPRITE
+fighter
+
+i images\fighter.png
+w 1

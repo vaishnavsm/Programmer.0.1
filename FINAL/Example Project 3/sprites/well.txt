@@ -1,0 +1,5 @@
+SPRITE
+well
+
+i images\heal2.png
+w 1

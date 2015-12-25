@@ -1,0 +1,5 @@
+SPRITE
+mob3
+
+i images\mob3.png
+w 1

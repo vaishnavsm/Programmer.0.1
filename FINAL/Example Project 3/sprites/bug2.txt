@@ -1,0 +1,145 @@
+SPRITE
+bug2
+
+i images\bug2.png
+w 1
+
+ro
+isp 2
+rand
+mod
+ssv 0 0 or1
+
+t1
+gv 0 0 or
+isp 0
+eq
+ssp grass
+gs 1 0
+seq
+la
+gv 0 0 or1
+isp 1
+eq
+la
+gv 0 0 dn
+ln
+la
+if
+ss 1 0 bug2
+sv 1 0 or 1
+gv 0 0 or1
+ssv 1 0 or1
+ss 0 0 grass
+sv 0 0 dn 1
+;
+gv 0 0 or
+isp 1
+eq
+ssp grass
+gs -1 0
+seq
+la
+gv 0 0 or1
+la
+gv 0 0 dn
+ln
+la
+if
+ss -1 0 bug2
+sv -1 0 or 0
+gv 0 0 or1
+ssv -1 0 or1
+ss 0 0 grass
+sv 0 0 dn 1
+;
+
+gv 0 0 or
+isp 0
+eq
+ssp grass
+gs 0 1
+seq
+la
+gv 0 0 or1
+isp 0
+eq
+la
+gv 0 0 dn
+ln
+la
+if
+ss 0 1 bug2
+sv 0 1 or 1
+gv 0 0 or1
+ssv 0 1 or1
+ss 0 0 grass
+sv 0 0 dn 1
+;
+gv 0 0 or
+isp 1
+eq
+ssp grass
+gs 0 -1
+seq
+la
+gv 0 0 or1
+ln
+la
+gv 0 0 dn
+ln
+la
+if
+gv 0 0 or1
+ssv 0 -1 or1
+ss 0 -1 bug2
+sv 0 -1 or 0
+ss 0 0 grass
+sv 0 0 dn 1
+;
+
+
+oa
+isp 4
+rand
+mod
+ssv 0 0 dam
+gv 0 0 dam
+isp 0
+eq
+if
+isp 17
+ggv health
+sub
+print {17} DAMAGE
+ssgv health
+else
+gv 0 0 dam
+isp 1
+lt
+if
+isp 10
+ggv health
+sub
+print {10} DAMAGE
+ssgv health
+;
+;
+gv 0 0 ht
+isp 2
+lt
+if
+ss 0 0 grass
+ggv bug2kills
+isp 1
+add
+ssgv bug2kills
+else
+gv 0 0 ht
+isp 1
+add
+ssv 0 0 ht
+; 
+
+
+#

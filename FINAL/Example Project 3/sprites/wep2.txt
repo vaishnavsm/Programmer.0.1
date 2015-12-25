@@ -1,0 +1,14 @@
+SPRITE
+wep2
+
+i images\wep2.png
+w 0
+
+oh
+sgv dam 50
+ss 0 0 grass
+print GET: LIOR'S SWORD
+print You now deal 50 damage
+
+#
+

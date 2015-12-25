@@ -1,0 +1,5 @@
+SPRITE
+arm4
+
+i images\armor4.png
+w 0

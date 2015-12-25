@@ -1,0 +1,41 @@
+ROMFILE
+init
+
+sb 30
+sv 5
+
+pi images\player.png
+
+bsl
+arm1 sprites\arm1.txt
+arm2 sprites\arm2.txt
+arm3 sprites\arm3.txt
+arm4 sprites\arm4.txt
+blob sprites\blob.txt
+rock sprites\rock.txt
+bug1 sprites\bug1.txt
+bug2 sprites\bug2.txt
+bug3 sprites\bug3.txt
+dragon sprites\dragon.txt
+fighter sprites\fighter.txt
+fire sprites\fire.txt
+grass sprites\grass.txt
+fountain sprites\fountain.txt
+well sprites\well.txt
+man1 sprites\man1.txt
+man2 sprites\man2.txt
+man3 sprites\man3.txt
+man4 sprites\man4.txt
+mob1 sprites\mob1.txt
+mob2 sprites\mob2.txt
+mob3 sprites\mob3.txt
+mob4 sprites\mob4.txt
+cave sprites\cave.txt
+wep1 sprites\wep1.txt
+wep2 sprites\wep2.txt
+wep3 sprites\wep3.txt
+wep4 sprites\wep4.txt
+tree sprites\tree.txt
+esl
+
+m maps\map.txt

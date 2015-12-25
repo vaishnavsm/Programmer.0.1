@@ -1,0 +1,14 @@
+SPRITE
+wep1
+
+i images\wep1.png
+w 0
+
+oh
+sgv dam 10
+ss 0 0 grass
+print GET: WOODEN SWORD
+print You now deal 10 damage
+sgv quest1 2
+
+#

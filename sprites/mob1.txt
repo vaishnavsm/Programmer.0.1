@@ -1,0 +1,5 @@
+SPRITE
+mob1
+
+i images\mob1.png
+w 1

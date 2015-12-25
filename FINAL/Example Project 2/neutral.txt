@@ -1,0 +1,16 @@
+SPRITE
+neutral
+i n.png
+
+oa
+ggv turn
+if
+ss 0 0 xt
+else
+ss 0 0 ot
+;
+ggv turn
+ln
+ssgv turn
+
+#

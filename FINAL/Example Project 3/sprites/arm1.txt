@@ -1,0 +1,15 @@
+SPRITE
+arm1
+
+i images\armor1.png
+w 0
+
+
+oh
+sgv health 200
+sgv maxhealth 200
+print GET: RAG ARMOUR
+print You now have 200 health.
+ss 0 0 grass
+
+#

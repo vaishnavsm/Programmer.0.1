@@ -1,0 +1,3 @@
+SPRITE
+black
+i b.png

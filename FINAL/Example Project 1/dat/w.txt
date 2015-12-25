@@ -1,0 +1,11 @@
+SPRITE
+water
+i dat\w1.png
+w 1
+
+oh
+print water
+
+oa
+sw 0 0 0
+#

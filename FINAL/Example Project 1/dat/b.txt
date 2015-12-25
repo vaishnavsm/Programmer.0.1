@@ -1,0 +1,11 @@
+SPRITE
+brick
+i dat\b1.png
+w 1
+
+oa
+print Your trial is useless.
+print You're stuck here, forever.
+;
+
+#

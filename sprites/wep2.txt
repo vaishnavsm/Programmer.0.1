@@ -1,0 +1,5 @@
+SPRITE
+wep2
+
+i images\wep2.png
+w 0

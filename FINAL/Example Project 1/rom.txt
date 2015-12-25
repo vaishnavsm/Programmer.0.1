@@ -1,0 +1,17 @@
+ROMFILE
+init
+
+sb 7
+sv 7
+
+pi dat\c1.png
+
+bsl
+water dat\w.txt
+grass dat\g.txt
+monster dat\p.txt
+brick dat\b.txt
+blood dat\bl.txt
+esl
+
+m dat\m.txt

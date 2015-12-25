@@ -1,0 +1,5 @@
+SPRITE
+bug2
+
+i images\bug2.png
+w 1

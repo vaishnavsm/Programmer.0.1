@@ -1,0 +1,5 @@
+SPRITE
+arm3
+
+i images\armor3.png
+w 0
